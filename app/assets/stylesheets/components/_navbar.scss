@@ -1,12 +1,22 @@
-.navbar-lewagon {
-  justify-content: space-between;
-  background: white;
-}
+.nav {
+    font-family: $body-font;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    background-color: rgb(20, 20, 23);
 
-.navbar-lewagon .navbar-collapse {
-  flex-grow: 0;
-}
-
-.navbar-lewagon .navbar-brand img {
-  width: 40px;
-}
+    li {
+      padding: 0px 20px;
+      display: inline-block;
+      a{
+        text-decoration: none;
+        color: aliceblue;
+        transition: all 0.5s ease 0s;
+      }
+      a:hover{
+        color: rgb(95, 255, 21);
+      }
+    }
+  }
