@@ -1,11 +1,47 @@
 .banner {
-  color: rgb(95, 255, 21);
+  color: rgb(252, 252, 252);
   margin: 3em;
-  font-family: $headers-font;
+  font-family: $body-font;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
   h1 {
-  font-size: 72px;
+    color: #efefef;
+    font-family: $headers-font;
+    font-size: 80px;
+    cursor: pointer;
+    letter-spacing: 2px;
+    transition: text-shadow 0.5s;
   }
-  h2 {
-    font-size: 48px;
+  h1:hover {
+    text-shadow: 0.03em 0.03em 0.03em #3ab4b5;
   }
+
+  h2{
+    color: #efefef;
+    letter-spacing: 2px;
+    font-family: $headers-font;
+    cursor: pointer;
+    transition: text-shadow 1s;
+  }
+  h2:hover {
+    text-shadow: 0.03em 0.02em #3ab4b5;
+  }
+
+  p{
+    font-size: 26px;
+    color: #8d8d8d;
+    font-family: $body-font;
+    text-shadow: #000000;
+    font-weight: 100;
+  }
+
+
+}
+
+.back{
+  background-image: url("/assets/back.png");
+  background-size: cover;
+  padding-bottom: 100px;
 }
