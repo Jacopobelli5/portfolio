@@ -1,0 +1,30 @@
+.social{
+  display: flex;
+  flex-direction: column;
+  padding-left: 30px;
+  font-size: 22px;
+  align-items: center;
+  ul{
+    padding-left: 5px;
+    list-style-type: none;
+    li{
+      padding-bottom: 5px;
+      padding-top: 15px;
+      a{
+        color: white;
+        text-decoration: none;
+      }
+      a:hover{
+        color: #3AB4B5;
+      }
+    }
+  }
+
+  .vertical{
+    border-left: 1px solid white;
+    height: 100px;
+  }
+
+  position: fixed;
+  bottom: 0;
+}

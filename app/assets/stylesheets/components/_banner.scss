@@ -4,44 +4,81 @@
   font-family: $body-font;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  padding-left: 400px;
+  margin-bottom: 30px;
 
   h1 {
     color: #efefef;
     font-family: $headers-font;
-    font-size: 80px;
-    cursor: pointer;
-    letter-spacing: 2px;
+    font-size: 65px;
     transition: text-shadow 0.5s;
+    margin-bottom: 0px;
   }
   h1:hover {
     text-shadow: 0.03em 0.03em 0.03em #3ab4b5;
   }
 
   h2{
-    color: #efefef;
-    letter-spacing: 2px;
+    margin-top: 0px;
+    align-self: left;
+    font-size: 65px;
+    color: #8d8d8d;
     font-family: $headers-font;
-    cursor: pointer;
-    transition: text-shadow 1s;
-  }
-  h2:hover {
-    text-shadow: 0.03em 0.02em #3ab4b5;
   }
 
   p{
     font-size: 26px;
     color: #8d8d8d;
     font-family: $body-font;
-    text-shadow: #000000;
     font-weight: 100;
+  }
+
+  .small-p {
+    margin-bottom: 5px;
+    font-family: $small-font;
+    padding-left: 20px;
+    font-size: 20px;
+    color: #25e3e0;
   }
 
 
 }
 
-.back{
-  background-image: url("/assets/back.png");
-  background-size: cover;
-  padding-bottom: 100px;
+.nav {
+  font-family: $body-font;
+  font-size: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 10%;
+
+  li {
+    padding-inline: 40px;
+    margin-bottom: 50px;
+    display: inline-block;
+    a{
+      position: relative;
+      text-decoration: none;
+      color: #e7e7e7;
+      font-size: 20px;
+      letter-spacing: 0.5px;
+      padding: 0 10px;
+  }
+  a:after{
+      content: "";
+      position: absolute;
+      background-color: #3AB4B5;
+      height: 2px;
+      width: 0;
+      left: 0;
+      bottom: -7px;
+      transition: 0.3s;
+  }
+  a:hover{
+      color: #ffffff;
+  }
+  a:hover:after{
+      width: 100%;
+  }
+  }
 }
