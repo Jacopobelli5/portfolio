@@ -1,0 +1,20 @@
+<header data-controller="nav-fade">
+<div class="nav">
+<div>
+<%= link_to root_path do %>
+  <img src="<%= asset_path('logo.png')%>", width="100px" class="logo">
+</div>
+<% end %>
+  <ul>
+    <li>
+      <%= link_to "About", "#", class: "" %>
+    </li>
+    <li>
+      <%= link_to "Experience", "#", class: "" %>
+    </li>
+    <li>
+      <%= link_to "Works", "#", class: "" %>
+    </li>
+  </ul>
+</div>
+</header>

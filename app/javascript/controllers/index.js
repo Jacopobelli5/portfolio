@@ -6,3 +6,9 @@ import { application } from "./application"
 
 import AutoTypeController from "./auto_type_controller"
 application.register("auto-type", AutoTypeController)
+
+import HelloController from "./hello_controller"
+application.register("hello", HelloController)
+
+import NavFadeController from "./nav_fade_controller"
+application.register("nav-fade", NavFadeController)
