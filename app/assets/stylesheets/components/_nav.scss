@@ -3,14 +3,15 @@
   font-family: $body-font;
   font-size: 20px;
   display: flex;
+  height: 100px;
   width: 100%;
   justify-content: space-between;
   align-items: center;
-  padding-inline: 60px;
+  padding-inline: 100px;
   height: 110px;
 
   li {
-    padding-top: 20px;
+
     padding-inline: 30px;
     margin-bottom: 30px;
     display: inline-block;
@@ -41,9 +42,10 @@
   }
 
   .logo{
-    padding-top: 10px;
+    padding-top: 30px;
     padding-left: 20px;
-    padding-bottom: 20px;
+    z-index: 9999;
+	  transition: all 500ms ease-in-out;
   }
 }
 
@@ -61,11 +63,19 @@ header {
 	header {
 		transform: translate3d(0, -100%, 0);
 	}
+
+  .logo {
+		transform: translate3d(0, -100%, 0);
+	}
 }
 
 .scroll-up {
 	header {
 		filter: drop-shadow(0 -10px 8px rgb(88, 88, 88));
+	}
+
+  .logo {
+		filter: drop-shadow(0 -10px 8px rgba(34, 214, 210, 0.2));
 	}
 }
 
@@ -75,4 +85,10 @@ header {
 	header {
 		filter: none;
 	}
+
+	.logo {
+		filter: none;
+	}
+
+
 }

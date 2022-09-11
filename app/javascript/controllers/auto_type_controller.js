@@ -4,11 +4,11 @@ import Typed from 'typed.js';
 export default class extends Controller {
   connect () {
     const typed = new Typed('.type', {
-    strings : ["Hi, my name is"],
+    strings : ["Hi, my name is,"],
     typeSpeed: 130,
     backSpeed: 50,
     loop: true,
-    loopCount: 3
+    loopCount: 5
     });
 };
 }

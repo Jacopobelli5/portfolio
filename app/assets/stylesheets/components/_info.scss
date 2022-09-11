@@ -1,35 +1,28 @@
-.second-div{
+.cards{
   margin-top: 200px;
   color: rgb(250, 250, 250);
-  display: flex;
-  justify-content: space-between;
+  border-radius: 10px;
 
-  h2 {
+  p{
     font-family: $body-font;
   }
 
-  .info{
-    background-color: #171E26;
-    flex: 2;
-    padding: 20px;
-    text-shadow: 1px 1px 3px rgba(103, 103, 103, 0.4);
-    border-radius: 5px;
-    box-shadow: 0 0 15px rgba(0,0,0,0.2);
-    p{
-      font-family: $body-font;
-    }
-
+  h5 {
+    font-family: $body-font;
   }
 
-  .list{
-    flex: 1;
-    position: relative;
-    margin-left: 300px;
-    border-left: 2px solid #3AB4B5;
-    padding-inline: 30px;
-    ul {
-      list-style-type: none;
-    }
-    }
+  .card-info{
+  background-color: #171E26;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  .card-title{
+    text-align: center;
+    font-size: 24px;
+  }
+  .card-text{
+    margin-top: 15px;
+  }
+
+  }
 
 }
