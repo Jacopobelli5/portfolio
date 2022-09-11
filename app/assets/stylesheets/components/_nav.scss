@@ -1,19 +1,17 @@
 .nav {
   background-color: #0E141B;
   font-family: $body-font;
-  font-size: 20px;
+  font-size: 18px;
   display: flex;
-  height: 100px;
+  height: 90px;
   width: 100%;
   justify-content: space-between;
   align-items: center;
   padding-inline: 100px;
-  height: 110px;
 
   li {
-
+    padding-bottom: 30px ;
     padding-inline: 30px;
-    margin-bottom: 30px;
     display: inline-block;
     a{
       position: relative;
@@ -21,7 +19,6 @@
       color: #e7e7e7;
       font-size: 20px;
       letter-spacing: 0.5px;
-      padding: 0 10px;
   }
   a:after{
       content: "";
@@ -42,7 +39,7 @@
   }
 
   .logo{
-    padding-top: 30px;
+    padding-top: 20px;
     padding-left: 20px;
     z-index: 9999;
 	  transition: all 500ms ease-in-out;

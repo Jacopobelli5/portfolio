@@ -1,7 +1,10 @@
+#wrapper{
+  background-color: rgb(34, 214, 210);
+}
+
 .cards{
-  margin-top: 200px;
+  margin-top: 500px;
   color: rgb(250, 250, 250);
-  border-radius: 10px;
 
   p{
     font-family: $body-font;
@@ -12,6 +15,7 @@
   }
 
   .card-info{
+  margin-inline: 10px;
   background-color: #171E26;
   border-radius: 10px;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
