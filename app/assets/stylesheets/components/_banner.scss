@@ -3,17 +3,16 @@
   font-family: $body-font;
   display: flex;
   flex-direction: column;
-  margin-top: 250px;
-  padding-bottom: 200px;
-  margin-left: 300px;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
 
   .description {
     width: 500px;
-
-    p {
-      font-size: 20px;
-      margin-top: 20px;
-    }
+    font-size: 20px;
+    color: #8d8d8d;
+    font-family: $body-font;
+    font-weight: 100;
   }
 
   h1 {
@@ -35,13 +34,6 @@
     font-family: $headers-font;
   }
 
-  p {
-    font-size: 26px;
-    color: #8d8d8d;
-    font-family: $body-font;
-    font-weight: 100;
-  }
-
   .small-p {
     margin-bottom: 5px;
     font-family: $small-font;
@@ -52,14 +44,21 @@
   }
 }
 
+.c-banner {
+  padding-inline: 200px;
+}
+
 @media only screen and (max-width: 1000px) {
+  .c-banner {
+    padding-left: 50px;
+  }
   .banner {
     margin-left: auto;
     h1 {
-      font-size: 60px;
+      font-size: 7vw;
     }
     h2 {
-      font-size: 60px;
+      font-size: 7vw;
     }
 
     .small-p {

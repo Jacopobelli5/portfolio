@@ -1,6 +1,24 @@
-.about{
+.about {
   color: white;
   text-align: center;
   justify-content: center;
-  padding-top: 200px;
+  color: #8d8d8d;
+  font-family: $body-font;
+  font-size: 20px;
+  font-weight: 100;
+
+  .about-text {
+    box-shadow: 0 0 15px rgba($color: #313131, $alpha: 0.7);
+    padding: 40px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+  }
+
+  .jacopo-pic {
+    max-width: 500px;
+    border-radius: 5px;
+    box-shadow: 0 0 15px rgba($color: #313131, $alpha: 0.7);
+  }
 }
