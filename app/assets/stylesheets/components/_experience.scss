@@ -1,0 +1,20 @@
+.experience {
+  color: #8d8d8d;
+  font-size: 20px;
+  ul {
+    font-size: 20px;
+    color: #8d8d8d;
+    font-family: $body-font;
+    font-weight: 100;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(140px, 200px));
+    gap: 10px 10px;
+    padding: 5px;
+    margin: 20px 0px 0px;
+    list-style: none;
+  }
+
+  .image {
+    text-align: center;
+  }
+}
