@@ -1,7 +1,6 @@
 .nav {
   background-color: #0e141b;
   font-family: $body-font;
-  font-size: 18px;
   display: flex;
   height: 90px;
   width: 100%;
@@ -17,7 +16,7 @@
       position: relative;
       text-decoration: none;
       color: #e7e7e7;
-      font-size: 20px;
+      font-size: 18px;
       letter-spacing: 0.5px;
     }
     a:after {

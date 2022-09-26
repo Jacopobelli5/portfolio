@@ -4,11 +4,12 @@
   font-family: $body-font;
   width: 100%;
   text-align: center;
-  border-bottom: 1px solid rgb(233, 233, 233);
   line-height: 0.1em;
   margin: 80px 0 80px;
   span {
     background-color: #0e141b;
-    padding: 0 10px;
+    padding: 5px 15px;
+    padding-top: 10px;
+    border-radius: 5px;
   }
 }
