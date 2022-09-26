@@ -1,4 +1,4 @@
-.social{
+.social {
   display: flex;
   flex-direction: column;
   padding-left: 30px;
@@ -6,24 +6,32 @@
   align-items: center;
   position: fixed;
   bottom: 0;
-  ul{
+
+  ul {
     padding-left: 5px;
     list-style-type: none;
-    li{
+    li {
       padding-bottom: 5px;
       padding-top: 15px;
-      a{
+      a {
         color: white;
         text-decoration: none;
       }
-      a:hover{
+      a:hover {
         color: #2afaf7;
+        filter: drop-shadow(0 -6px 8px rgba(14, 255, 251, 0.2));
       }
     }
   }
 
-  .vertical{
+  .vertical {
     border-left: 1px solid white;
     height: 100px;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .social {
+    display: none;
   }
 }

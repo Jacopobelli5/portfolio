@@ -2,13 +2,16 @@
 // Run that command whenever you add a new controller or create them with
 // ./bin/rails generate stimulus controllerName
 
-import { application } from "./application"
+import { application } from "./application";
 
-import AutoTypeController from "./auto_type_controller"
-application.register("auto-type", AutoTypeController)
+import AutoTypeController from "./auto_type_controller";
+application.register("auto-type", AutoTypeController);
 
-import HelloController from "./hello_controller"
-application.register("hello", HelloController)
+import FooterAutoTypeController from "./footer_auto_type_controller";
+application.register("footer-auto-type", FooterAutoTypeController);
 
-import NavFadeController from "./nav_fade_controller"
-application.register("nav-fade", NavFadeController)
+import HelloController from "./hello_controller";
+application.register("hello", HelloController);
+
+import NavFadeController from "./nav_fade_controller";
+application.register("nav-fade", NavFadeController);
