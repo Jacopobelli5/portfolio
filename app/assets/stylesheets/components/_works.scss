@@ -1,0 +1,40 @@
+.works {
+  h3 {
+    font-family: $body-font;
+    color: white;
+  }
+}
+.card {
+  -webkit-filter: opacity(50%); /* Safari 6.0 - 9.0 */
+  filter: opacity(70%);
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 0 15px rgba($color: #293a4e, $alpha: 0.2);
+  a {
+    text-decoration: none;
+    color: black;
+  }
+  img {
+    -webkit-filter: blur(5px);
+    filter: blur(1.5px);
+    max-height: 200px;
+  }
+  &:hover {
+    filter: opacity(100%);
+    transition: 0.3s;
+    img {
+      -webkit-filter: blur(5px);
+      filter: blur(0px);
+      transition: 0.3s;
+    }
+  }
+}
+.card-text {
+  font-weight: lighter;
+  font-size: 20px;
+  font-family: $body-font;
+}
+
+.card-body {
+  padding-top: 35px;
+  padding-bottom: 0;
+}
