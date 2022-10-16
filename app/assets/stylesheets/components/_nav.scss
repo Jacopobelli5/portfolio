@@ -6,10 +6,10 @@
   width: 100%;
   justify-content: space-between;
   align-items: center;
-  padding-inline: 100px;
+  padding-right: 30px;
 
   li {
-    padding-bottom: 30px;
+    padding-bottom: 40px;
     padding-inline: 30px;
     display: inline-block;
     a {
@@ -38,8 +38,8 @@
   }
 
   .logo {
-    padding-top: 20px;
-    padding-left: 20px;
+    padding-top: 10px;
+    padding-left: 10px;
     z-index: 9999;
     transition: all 500ms ease-in-out;
   }
@@ -84,5 +84,17 @@ header {
 
   .logo {
     filter: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .nav {
+    li {
+      display: none;
+    }
+
+    .logo {
+      width: 100px;
+    }
   }
 }
