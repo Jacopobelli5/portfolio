@@ -1,5 +1,4 @@
 .nav {
-  background-color: #0e141b;
   font-family: $body-font;
   display: flex;
   height: 90px;
@@ -9,6 +8,7 @@
   padding-right: 30px;
 
   li {
+    padding-top: 30px;
     padding-bottom: 40px;
     padding-inline: 30px;
     display: inline-block;
@@ -63,6 +63,9 @@ header {
   .logo {
     transform: translate3d(0, -100%, 0);
   }
+  .opaque {
+    transform: translate3d(0, -100%, 0);
+  }
 }
 
 .scroll-up {
@@ -72,6 +75,9 @@ header {
 
   .logo {
     filter: drop-shadow(0 -10px 8px rgba(34, 214, 210, 0.2));
+  }
+  .opaque {
+    background-color: #0e141b;
   }
 }
 
@@ -83,6 +89,10 @@ header {
   }
 
   .logo {
+    filter: none;
+  }
+
+  .opaque {
     filter: none;
   }
 }
@@ -97,4 +107,9 @@ header {
       width: 100px;
     }
   }
+}
+
+.opaque {
+  z-index: 9999;
+  transition: all 500ms ease-in-out;
 }

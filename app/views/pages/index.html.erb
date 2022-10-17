@@ -1,23 +1,29 @@
 <!-- banner and navbar !-->
 <%= render "pages/shared/nav" %>
+<div id="image">
 <div class="container c-banner">
 <%= render "pages/shared/banner" %>
 </div>
+</div>
 <!-- about !-->
-<div class="background">
+<div class="background" id="about">
   <div class="container about">
   <%= render "pages/shared/about" %>
   </div>
 </div>
 <!-- experience !-->
-<div class="container experience">
+<div class="container experience" id="experience">
 <%= render "pages/shared/experience" %>
 </div>
+
 <!-- works !-->
-<div class="background">
+<div class="background" id="works">
   <div class="container works">
   <%= render "pages/shared/works" %>
   </div>
 </div>
+<!--footer!-->
+<%= render "pages/shared/footer" %>
 
+<!--contacts!-->
 <%= render "pages/shared/social" %>

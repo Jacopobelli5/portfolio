@@ -1,52 +1,53 @@
-import { Controller } from "@hotwired/stimulus"
+import { Controller } from "@hotwired/stimulus";
 
 // Connects to data-controller="nav-fade"
 export default class extends Controller {
-
   connect() {
     const body = document.body;
     let lastScroll = 0;
 
     window.addEventListener("scroll", () => {
-	  const currentScroll = window.pageYOffset;
-	  if (currentScroll <= 0) {
-	  	body.classList.remove("scroll-up");
-	  	return;
-	  }
+      const currentScroll = window.pageYOffset;
+      if (currentScroll <= 0) {
+        body.classList.remove("scroll-up");
+        return;
+      }
 
-	  if (currentScroll > lastScroll && !body.classList.contains("scroll-down")) {
-	  	body.classList.remove("scroll-up");
-	  	body.classList.add("scroll-down");
-	  } else if (
-	  	currentScroll < lastScroll &&
-	  	body.classList.contains("scroll-down")
-	  ) {
-	  	body.classList.remove("scroll-down");
-	  	body.classList.add("scroll-up");
-	  }
-	  lastScroll = currentScroll;
-});
-
+      if (
+        currentScroll > lastScroll &&
+        !body.classList.contains("scroll-down")
+      ) {
+        body.classList.remove("scroll-up");
+        body.classList.add("scroll-down");
+      } else if (
+        currentScroll < lastScroll &&
+        body.classList.contains("scroll-down")
+      ) {
+        body.classList.remove("scroll-down");
+        body.classList.add("scroll-up");
+      }
+      lastScroll = currentScroll;
+    });
   }
   //fade() {
   //  const body = document.body
   //  let lastScroll = 0
   //  const currentScroll = window.pageYOffset;
-	//if (currentScroll <= 0) {
-	//	body.classList.remove("scroll-up");
-	//	return;
-	//}
-//
-	//if (currentScroll > lastScroll && !body.classList.contains("scroll-down")) {
-	//	body.classList.remove("scroll-up");
-	//	body.classList.add("scroll-down");
-	//} else if (
-	//	currentScroll < lastScroll &&
-	//	body.classList.contains("scroll-down")
-	//) {
-	//	body.classList.remove("scroll-down");
-	//	body.classList.add("scroll-up");
-	//}
-	//lastScroll = currentScroll;
+  //if (currentScroll <= 0) {
+  //	body.classList.remove("scroll-up");
+  //	return;
+  //}
+  //
+  //if (currentScroll > lastScroll && !body.classList.contains("scroll-down")) {
+  //	body.classList.remove("scroll-up");
+  //	body.classList.add("scroll-down");
+  //} else if (
+  //	currentScroll < lastScroll &&
+  //	body.classList.contains("scroll-down")
+  //) {
+  //	body.classList.remove("scroll-down");
+  //	body.classList.add("scroll-up");
+  //}
+  //lastScroll = currentScroll;
   //}
 }

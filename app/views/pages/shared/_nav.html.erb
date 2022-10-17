@@ -1,5 +1,5 @@
 <header data-controller="nav-fade">
-  <div class="nav">
+  <div class="nav opaque" id="navbar">
     <div>
     <%= link_to root_path do %>
       <img src="<%= asset_path('logo.png')%>", width="100px" class="logo">
@@ -7,13 +7,13 @@
     </div>
       <ul>
         <li>
-          <%= link_to "About", "#", class: "" %>
+          <%= link_to "About", root_path(anchor: "about") %>
         </li>
         <li>
-          <%= link_to "Experience", "#", class: "" %>
+          <%= link_to "Experience", root_path(anchor: "experience") %>
         </li>
         <li>
-          <%= link_to "Works", "#", class: "" %>
+          <%= link_to "Works", root_path(anchor: "works") %>
         </li>
       </ul>
   </div>
