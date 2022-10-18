@@ -1,5 +1,5 @@
 .experience {
-  min-height: 100vh;
+  min-height: 80vh;
   h1 {
     margin-top: 0;
   }
@@ -17,12 +17,49 @@
     margin: 20px 0px 0px;
     list-style: none;
   }
-
-  .image {
-    text-align: center;
-  }
   p {
     font-weight: lighter;
+  }
+  .exp-text {
+    box-shadow: 0 0 15px rgba($color: #18222d, $alpha: 0.2);
+    padding: 30px;
+    margin-top: 50px;
+    border-radius: 5px;
+    justify-content: center;
+    text-align: left;
+    background-color: #141b25;
+    max-width: 600px;
+    max-height: 700px;
+    &:hover {
+      cursor: pointer;
+      max-width: 610px;
+      max-height: 710px;
+      transition: 700ms;
+      .lewagon-image {
+        pointer-events: painted;
+        transition: 800ms;
+        max-width: 455px;
+        filter: brightness(1);
+      }
+    }
+    h3 {
+      color: rgb(249, 249, 249);
+      font-family: $body-font;
+      margin-top: 20px;
+      margin-bottom: 10px;
+    }
+    p {
+      overflow: hidden;
+      max-width: 540px;
+    }
+  }
+  .list {
+    margin-top: 100px;
+  }
+
+  .lewagon-image {
+    filter: brightness(0.8);
+    max-width: 450px;
   }
 }
 

@@ -1,43 +1,42 @@
 .about {
   color: white;
-  text-align: center;
-  justify-content: center;
   color: #8d8d8d;
   font-family: $body-font;
   font-size: 20px;
   font-weight: 100;
-  min-height: 100vh;
+  min-height: 80vh;
 
   .about-text {
     box-shadow: 0 0 15px rgba($color: #293a4e, $alpha: 0.2);
     padding: 40px;
     border-radius: 5px;
-    display: flex;
-    flex-direction: column;
     text-align: left;
     background-color: #0e141b;
+    max-width: 600px;
+    margin-right: 60px;
   }
 
   .jacopo-pic {
+    filter: brightness(0.9);
+    margin-top: 30px;
     max-width: 500px;
     border-radius: 5px;
     box-shadow: 0 0 15px rgba($color: #313131, $alpha: 0.7);
+    &:hover {
+      cursor: pointer;
+      max-width: 510px;
+      transition: 500ms;
+      filter: brightness(1);
+    }
   }
 }
 
 @media screen and (max-width: 980px) {
-  .parts {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
   .about-text {
     min-width: 600px;
   }
   .image {
-    margin-right: 40px;
-    align-items: center;
-    margin-top: 20px;
+    display: none;
   }
   .jacopo-pic {
     width: 400px;
@@ -45,22 +44,7 @@
 }
 
 @media screen and (max-width: 700px) {
-  .parts {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .about-text {
-    width: 300px;
-  }
-
   .image {
-    margin-right: 40px;
-    align-items: center;
-    margin-top: 20px;
-  }
-  .jacopo-pic {
-    width: 300px;
+    display: none;
   }
 }
