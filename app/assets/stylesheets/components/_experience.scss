@@ -63,11 +63,21 @@
   }
 }
 
-@media screen and (max-width: 980px) {
+@media screen and (max-width: 1200px) {
   .experience {
     ul {
       display: grid;
       grid-template-columns: repeat(2, minmax(140px, 200px));
+    }
+    .lewagon-image {
+      display: none;
+    }
+    .exp-text {
+      max-height: none;
+      height: auto;
+      &:hover {
+        max-height: none;
+      }
     }
   }
 }
