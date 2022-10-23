@@ -27,11 +27,11 @@
     border-radius: 5px;
     background-color: #141b25;
     max-width: 600px;
-    max-height: 750px;
+    max-height: 830px;
     &:hover {
       cursor: pointer;
       max-width: 610px;
-      max-height: 760px;
+      max-height: 840px;
       transition: 700ms;
       .lewagon-image {
         pointer-events: painted;
@@ -52,9 +52,6 @@
     }
   }
   .list {
-    p {
-      text-align: center;
-    }
     margin-top: 100px;
   }
 
@@ -77,6 +74,14 @@
         max-width: none;
         max-height: none;
       }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .list {
+    p {
+      text-align: center;
     }
   }
 }
