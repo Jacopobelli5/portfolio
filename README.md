@@ -1,4 +1,4 @@
 Welcome to my Portfolio!
-This website has been built using Ruby on Rails, JavaScript, HTML and CSS.
 
-You can find the deployed website on www.jacopobelli.herokuapp.com
+This is my personal website where you can find more info about myself, my experiences and my works!
+You can find the deployed website on http://jacopobelli.herokuapp.com
