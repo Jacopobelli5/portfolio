@@ -22,11 +22,13 @@
     max-width: 500px;
     border-radius: 5px;
     box-shadow: 0 0 15px rgba($color: #313131, $alpha: 0.7);
+    filter: grayscale(95%);
+    transition: all 500ms ease-in-out;
     &:hover {
       cursor: pointer;
       max-width: 510px;
-      transition: 500ms;
       filter: brightness(1);
+      filter: grayscale(0);
     }
   }
 }
